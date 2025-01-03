@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BR</title>
     <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="wrapper">
-        <div class="navigation-container">
+        <header class="navigation-container">
             <div class="navigation-rectangle"></div>
             <div class="background-square"></div>
-            <div class="logo"></div>
-        </div>
+            <div class="logo">BR</div>
+        </header>
 
         <main class="main-container"> 
             <div class="title-container">
-                <div><h1>Great expectations</h1></div>
-                <div><h2>Novel</h2></div>
+                <div class="title-name"><h1>Great expectations</h1></div>
+                <div class="subtitle-name"><p>Novel</p></div>
             </div>
 
             <div class="author-container">
-                <div> <img src=""> </div>
-                <div> SVG</div>
-                <button><a href="#">Donate</a></button>
+                <div class="image-container"> <img class="author-image" src="images/author-photo.jpg"></div>
+                <div class="ratings-container"> 
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div><button class="donate-btn"><a href="#">Donate</a></button></div>
             </div>
 
             <div class="text-container">
@@ -31,12 +41,14 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus eveniet eaque facilis sint aperiam molestias mollitia voluptates dolor quisquam nesciunt. Veniam nemo ratione fugit exercitationem blanditiis hic provident, laudantium suscipit!                  
                     </p>
                 </div>
-                <button><a href="">Read the book</a></button>
+
+                <div class="read-more-container">
+                    <button><a href="">Read the book</a></button>
+                </div>
+    
+                
             </div>
 
-            <div class="read-more-container">
-
-            </div>
         </main>
 
 
