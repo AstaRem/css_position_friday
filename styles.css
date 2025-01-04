@@ -18,6 +18,7 @@
     --navigation-backgound-color: #EFF4F7;
     --content-background-color: #D9D9D9;
     --logo-color:#F5F5F5;
+    --button-text-color: #214037;
 }
 
 * {
@@ -39,7 +40,7 @@
 
 .navigation-container {
     width: 95%;
-    margin: 30px 0;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,9 +78,9 @@
 /* main section */
 .main-container {
     width: 95%;
-    height: 65%;
+    height: 75%;
     background-color: var(--content-background-color);
-    margin-top: 30px;
+    /* margin-top: 30px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,9 +124,14 @@
 /* author card */
 
 .author-container {
+    box-sizing: border-box;
+    position: absolute;
+top: 160px;
+
     margin-top:60px;
     background-color: var(--accent-color);
     width: 45%;
+    max-width: 490px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,13 +168,41 @@
 
 /* text container */
 .text-container {
-    height: 100%;
+    /* max-height: 90%; */
     background-color: var(--logo-color);
-    margin: 20px 40px;
-    padding:  150px 30px 30px 30px;
+    margin: 220px 50px;
+    /* padding:  150px 30px 30px 30px; */
     z-index: 4;
-    position: absolute;
-    top: 300px;
+    /* position: absolute; 
+    top: 250px;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self:flex-end;
+
+}
+
+.text-container div p {
+    padding: 150px 20px 20px 20px;
+    width: 65%;
+    font-size: 1rem;
+}
+
+.read-more-container {
+    padding: 0 0 20px 20px;
+}
+.read-more-container button {
+    background-color: var(--logo-color);
+    border: 1px solid var(--button-text-color);
+    padding: 5px 15px;
+}
+.read-more-container a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--button-text-color);
+    font-weight: 600;
+    /* letter-spacing: 0.5px; */
+    font-size: 1rem;
 }
 
 
