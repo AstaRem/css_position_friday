@@ -28,7 +28,7 @@
 }
 
 .wrapper {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     font-family: "Montserrat", serif;
     background-image: linear-gradient(var(--background-color-light), var(--background-color-dark));
@@ -40,6 +40,7 @@
 
 .navigation-container {
     width: 95%;
+    max-width: 1100px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -58,6 +59,7 @@
 
 }
 
+/* position absolute */
 .background-square {
     width: 130px;
     height: 130px;
@@ -78,7 +80,8 @@
 /* main section */
 .main-container {
     width: 95%;
-    height: 75%;
+    max-width: 1100px;
+    margin-bottom: 40px;
     background-color: var(--content-background-color);
     /* margin-top: 30px; */
     display: flex;
@@ -100,34 +103,33 @@
 }
 
 .title-container h1 {
-    font-size: 5.8cqw;
+    font-size: 64px;
     font-weight: 700;
     color: var(--background-color-dark);
     text-transform: uppercase;
 
 }
 
-.title-container p {
+.title-container .subtitle-name {
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: 20px;
     left: 42%;
 }
 
 .title-container .subtitle-name {
-    font-size: 11cqw;
+    font-size: 128px;
     font-weight: 700;
     color: var(--background-color-light);
     text-transform: uppercase;
 }
 
-/* author card */
+/* author card - position absolute */
 
 .author-container {
     box-sizing: border-box;
     position: absolute;
-top: 160px;
-
+    top: 15%;
     margin-top:60px;
     background-color: var(--accent-color);
     width: 45%;
@@ -168,13 +170,9 @@ top: 160px;
 
 /* text container */
 .text-container {
-    /* max-height: 90%; */
     background-color: var(--logo-color);
-    margin: 220px 50px;
-    /* padding:  150px 30px 30px 30px; */
+    margin: 200px 50px 50px 50px;
     z-index: 4;
-    /* position: absolute; 
-    top: 250px;  */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -205,5 +203,32 @@ top: 160px;
     font-size: 1rem;
 }
 
+@media only screen and (max-width: 900px) {
+    .title-container h1 {
+        font-size: 44px;
+    }
+
+    .title-container .subtitle-name {
+        font-size: 88px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .title-container h1 {
+        font-size: 32px;
+    }
+
+    .title-container .subtitle-name {
+        font-size: 64px;
+    }
+
+.author-container {
+    position: absolute;
+    top: 10%;
+
+}
+
+}
 
 
